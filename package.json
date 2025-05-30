@@ -1,8 +1,10 @@
 {
+  "homepage": "https://jakemurph123.github.io/reddit/",
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "gh-pages": "^6.3.0",
     "@reduxjs/toolkit": "^1.4.0",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
@@ -20,6 +22,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint ./src/**.*{js,jsx} --fix"
